@@ -1,0 +1,24 @@
+<div class="login">
+    <div class="login__content">
+      <img src="../../../assets/logo-orange.svg" alt="logo-orange" class="login__logo">
+      <form [formGroup]="loginForm" class="login__form" (ngSubmit)="onSubmit()">
+        <fieldset class="login__fieldset">
+          <legend class="login__legend">Olá, faça login em sua conta.</legend>
+          <div class="login__form-group">
+            <input type="email" formControlName="email" class="login__input" placeholder="Insira seu email" required>
+            <label for="email" class="login__label">Email</label>
+          </div>
+          <div class="login__form-group">
+            <input type="password" formControlName="senha" class="login__input" placeholder="Digite sua senha" required>
+            <label for="senha" class="login__label">Senha</label>
+          </div>
+          <button type="submit" class="login__submit-btn" [disabled]="!loginForm.valid">
+            Entrar
+            <!-- <span *ngIf="!isLoading">Entrar</span>
+                <div *ngIf="isLoading" class="loading-spinner"></div>
+            <span *ngIf="isLoading">Entrando</span>  -->
+          </button>
+        </fieldset>
+      </form>
+    </div>
+</div>
