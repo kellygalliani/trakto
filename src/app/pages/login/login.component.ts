@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -9,20 +11,27 @@ import { FormBuilder, Validators } from '@angular/forms';
 export class LoginComponent {
   loginForm = this.fb.group({
     email: ['', [Validators.required, Validators.email]],
-    senha: ['', Validators.required],
+    password: ['', Validators.required],
   });
 
-  constructor(private fb: FormBuilder) {}
+  constructor(
+    private fb: FormBuilder,
+    private loginService: LoginService,
+    private router: Router
+    ) {}
 
-  onSubmit() {
-    // Acessando os valores dos campos de email e senha
+  async onSubmit() {
     const email = this.loginForm.get('email')!.value;
-    const senha = this.loginForm.get('senha')!.value;
-    // Ou acessando todos os valores do formulário de uma vez
+    const senha = this.loginForm.get('password')!.value;
+    
     const formValues = this.loginForm.value;
 
-    // Fazendo algo com os valores do formulário
-    console.log(email, senha);
-    console.log(formValues);
+    try {
+      const result = await this.loginService.login(formValues)
+      if(result) this.router.navigate([''])
+    
+    } catch (error) {
+      console.log(error)
+    }
   }
 }

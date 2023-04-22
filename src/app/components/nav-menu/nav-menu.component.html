@@ -1,0 +1,28 @@
+<nav [class.dark-theme]="type === 'dark'">
+    <div class="container nav__content">
+      <img
+        [src]="type === 'dark' ? '../../../assets/logo-green-white.png' : '../../../assets/logo-green-dark.png'"
+        alt="Logo"
+        class="nav__logo"
+      >
+      <div class="nav__group">
+        <button *ngIf="type !== 'dark'" class="nav__button">
+            <i class="nav__icon nav__icon--plus"></i>
+            Add
+        </button>
+        <div>
+            <div class="nav__date">
+              <i class="nav__icon nav__icon--calendar"></i>
+              <p>Today's date</p>
+            </div>
+            <span class="nav__separator">|</span>
+            <i class="nav__icon nav__icon--bell"></i>
+            <span class="nav__separator">|</span>
+            <div class="nav__avatar">
+              <img src="avatar.png" alt="Avatar">
+              <i class="nav__icon nav__icon--arrow-down"></i>
+            </div>
+        </div>
+      </div>
+    </div>
+  </nav>
