@@ -13,17 +13,18 @@ export class LoginComponent {
     email: ['', [Validators.required, Validators.email]],
     password: ['', Validators.required],
   });
+  logginIn = false;
 
   constructor(
     private fb: FormBuilder,
     private loginService: LoginService,
-    private router: Router
-    ) {}
+    private router: Router,
+    ) {
+      this.loginService.logginIn.subscribe(logginIn => this.logginIn = logginIn);
+    }
 
   async onSubmit() {
-    const email = this.loginForm.get('email')!.value;
-    const senha = this.loginForm.get('password')!.value;
-    
+       
     const formValues = this.loginForm.value;
 
     try {

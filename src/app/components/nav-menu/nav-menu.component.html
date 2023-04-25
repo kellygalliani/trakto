@@ -19,7 +19,7 @@
             <img [src]="type === 'dark' ? '../../../assets/icon-bell-white.svg' : '../../../assets/icon-bell.svg'" alt="ícone de notificações" class="nav__icon">
             <span class="nav__separator">|</span>
             <div class="nav__avatar" (click)="toggleMenu()">
-              <img src="../../../assets/WhatsApp Image 2022-07-21 at 08.38.57.jpeg" alt="Avatar" class="nav__avatar--img">
+              <img [src]="setUser()" alt="Avatar do usuário" class="nav__avatar--img">
               <img [src]="type === 'dark' ? '../../../assets/icon-down-white.svg' : '../../../assets/icon-down.svg'" alt="abrir menu" class="nav__icon--menu">
             </div>
         </div>
@@ -27,7 +27,7 @@
           <p class="nav__menu-dropdown--title">Sua Conta</p>
           <a class="nav__menu-dropdown--links" href="">Perfil</a>
           <a class="nav__menu-dropdown--links" href="">Suporte</a>
-          <button class="nav__menu-dropdown--button">Sair da conta</button>
+          <button class="nav__menu-dropdown--button" (click)="logout()">Sair da conta</button>
         </div>
       </div>
     </div>

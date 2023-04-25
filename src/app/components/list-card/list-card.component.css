@@ -1,0 +1,16 @@
+.content__list{
+    display: flex;
+    gap: 32px;
+    
+}
+.content__list-item{
+    width: auto;
+    max-width: 301px;
+    background-color: aqua;
+}
+.content__list-text{
+    overflow: hidden;
+}
+.content__list-image{
+    max-width: 120px;
+}

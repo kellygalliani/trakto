@@ -10,19 +10,13 @@
                 <img src="../../../assets/left-arrow.svg" alt="left-arrow" class="icon-period">
                 <img src="../../../assets/right-arrow.svg" alt="right-arrow" class="icon-period">
             </div>
-            <div class="content__header-bottom">
-                <h2 class="content__header-title">Material didático</h2>
-                <p class="content__header-description">Acesse suas últimas apresentações de aula.</p>
-            </div>
-        </div>
-        <div class="content__button-container">
             <button class="content__button">Ver todo conteúdo</button>
+    
         </div>
-        <ul class="content__list">
-            <li class="content__list-item">
-                <img src="" alt="" class="content__list-image">
-                <p class="content__list-text">Aula 1: Fono-ortografia</p>
-            </li>
-        </ul>
+        <div class="content__header-bottom">
+            <h2 class="content__header-title">Material didático</h2>
+            <p class="content__header-description">Acesse suas últimas apresentações de aula.</p>
+        </div>
+        <app-list-card [showAll]="false"></app-list-card>
     </div>
 </main>

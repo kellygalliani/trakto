@@ -1,0 +1,6 @@
+<ul class="content__list">
+    <li *ngFor="let project of projects" class="content__list-item">
+      <img [src]="project.thumbs.low" alt="" class="content__list-image">
+      <p class="content__list-text">{{ project.title }}</p>
+    </li>
+</ul>

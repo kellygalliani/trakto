@@ -13,10 +13,9 @@
             <label for="password" class="login__label">Senha</label>
           </div>
           <button type="submit" class="login__submit-btn" [disabled]="!loginForm.valid">
-            Entrar
-            <!-- <span *ngIf="!isLoading">Entrar</span>
-                <div *ngIf="isLoading" class="loading-spinner"></div>
-            <span *ngIf="isLoading">Entrando</span>  -->
+            <span *ngIf="!logginIn">Entrar</span>
+               <div *ngIf="logginIn" class="loading-spinner"></div>
+            <span *ngIf="logginIn">Entrando...</span> 
           </button>
         </fieldset>
       </form>

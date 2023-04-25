@@ -11,6 +11,7 @@ import { DocumentsComponent } from './pages/documents/documents.component';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 
 import { httpInterceptorProvides } from './http-interceptors';
+import { ListCardComponent } from './components/list-card/list-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { httpInterceptorProvides } from './http-interceptors';
     LoginComponent,
     HomeComponent,
     DocumentsComponent,
-    NavMenuComponent
+    NavMenuComponent,
+    ListCardComponent
   ],
   imports: [
     BrowserModule,

@@ -34,13 +34,12 @@ nav{
     align-items: center;
     padding: 16px 24px;
     gap: 8px;
-    min-width: auto;
-    height: 56px;
+    max-width: 254px;
     border: 1px solid #7183A6;
     border-radius: var(--radius-2);
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
 }
 .nav__left-content{
     display: flex;
