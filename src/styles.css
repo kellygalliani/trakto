@@ -8,6 +8,7 @@
     list-style: none;
     text-decoration: none;
     font-family: var(--font-family);
+    z-index: 0;
   }
   
   :root {
@@ -54,6 +55,9 @@
   }
   a{
     text-decoration: none;
+  }
+  li{
+    cursor: pointer;
   }
   
   .container {

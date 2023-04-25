@@ -1,0 +1,24 @@
+.main-documents{
+    padding-top: 112px;
+    color:var(--color-neutral-cloudy);
+}
+.content{
+    margin-top: 32px;
+    width: 100%;
+    background-color: var(--color-neutral-white);
+    padding: 56px 72px;
+
+}
+.content__header-top{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.icon-period{
+    cursor: pointer;
+}
+.content__header-date{
+    background: #E4EBFB;
+    border-radius: 500px;
+    padding: 6px 8px;
+}

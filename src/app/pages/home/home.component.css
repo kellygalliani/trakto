@@ -31,6 +31,7 @@
     width: 90%;
     max-width: 280px;
     cursor: pointer;
+    z-index: 10;
 }
 .main__content--title{
     display: flex;
