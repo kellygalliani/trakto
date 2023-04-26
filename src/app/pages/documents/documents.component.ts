@@ -13,6 +13,6 @@ export class DocumentsComponent {
   }
 
   scrollList(direction: number) {
-    this.list.nativeElement.scrollBy({ left: direction * 300, behavior: 'smooth' });
+    this.list.nativeElement.scrollBy({ left: direction * 800, behavior: 'smooth' });
   }
 }

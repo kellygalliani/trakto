@@ -4,7 +4,7 @@
 .content__list{
     display: flex;
     gap: 32px;
-    overflow-x:hidden;
+    overflow-x:auto;
     padding-bottom: 25px;
     padding-right: 10px;
 }
@@ -12,6 +12,19 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
+}
+
+.content__list::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.4em;
+}
+
+.content__list::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.041);
+}
+
+.content__list::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
 }
 .content__list-item{
     width: auto;

@@ -17,7 +17,6 @@ export class ListCardComponent  implements AfterViewInit{
   ngOnInit() {
     if (this.showAll) {
       this.retrieveProjectsService.getProjects(true).subscribe(projects => {
-        console.log(projects)
         this.projects = projects.data;
       });
     } else {

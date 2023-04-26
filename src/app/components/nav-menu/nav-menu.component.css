@@ -28,6 +28,17 @@ nav{
     transition: gap 0.5s ease-in-out;
     position: relative;
 }
+.nav__hamburger{
+    display: none;
+}
+.material-symbols-rounded {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 68,
+  }
+
 .nav__button{
     display: flex;
     flex-direction: row;
@@ -78,7 +89,6 @@ nav{
     right: 0;
     background-color: var(--color-neutral-white);
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
-    padding: 16px;
     border-radius: var(--radius-2);
 
     display: flex;
@@ -124,6 +134,14 @@ nav{
 .dark-theme .nav__group{
     justify-content: end;
 }
+.dark-theme .material-symbols-rounded {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 68;
+    color: var(--color-neutral-white)
+}
 .dark-theme .nav__menu-dropdown{
     background-color: var(--color-background-nav);
     color: #fff;
@@ -158,31 +176,58 @@ nav{
 .dark-theme .arrow-down-icon {
 color: #fff;
 }
+.button-hidden{
+    display: none;
+}
 
 @media (max-width: 900px){
     nav{
         padding: 14px 0 14px 0;
     }
-    .nav__content{
+    .nav__group{
+        justify-content: end;
         align-items: center;
-        flex-direction: column;
-        gap: 20px;
     }
     .dark-theme .nav__group{
-        justify-content: center;
+        justify-content: end;
+        align-items: center;
+    } 
+    .nav__hamburger{
+        display: block;
+    }
+    .nav__menu-hidden {
+        display: none;
+    }
+    .button-hidden{
+        display: flex;
     }
 }
 @media (max-width: 675px){
     .nav__group{
-        display: flex;
+        justify-content: end;
         align-items: center;
-        justify-content: center;
-        gap: 15px;
+    }
+    .button-hidden{
+        display: block;
+    }
+    .nav__menu-dropdown{
+        width: 500%;
+    }
+    .nav__button{
+        font-size: 12px;
+        padding: 4px;
     }
 }
 @media (max-width: 368px){
     .nav__left-content{
         gap: 15px; 
+    }
+    .nav__group{
+        justify-content: end;
+        align-items: center;
+    }
+    .button-hidden{
+        display: block;
     }
 }
   
