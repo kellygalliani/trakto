@@ -4,16 +4,18 @@ import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
 import { DocumentsComponent } from './pages/documents/documents.component';
 import { AuthGuard } from './auth.guard';
+import { SeeAllProjectsComponent } from './pages/documents/see-all-projects/see-all-projects.component';
 
 const routes: Routes = [
   {
     path: '',
     children:[
-      {path: '', component:HomeComponent},
-      {path: 'documents', component:DocumentsComponent}
+        { path: '', component: HomeComponent },
+        { path: 'documents', component: DocumentsComponent },
+        { path: 'documents/see-all', component: SeeAllProjectsComponent }
     ],
     canActivate: [AuthGuard]
-  },
+},
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: '**', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },

@@ -7,16 +7,16 @@
         <div class="content__header">
             <div class="content__header-top">
                 <span class="content__header-date">Semana 06/02 até 28/02</span>
-                <img src="../../../assets/left-arrow.svg" alt="left-arrow" class="icon-period">
-                <img src="../../../assets/right-arrow.svg" alt="right-arrow" class="icon-period">
+                <img src="../../../assets/left-arrow.svg" alt="left-arrow" class="icon-period" (click)="scrollList(-1)">
+                <img src="../../../assets/right-arrow.svg" alt="right-arrow" class="icon-period" (click)="scrollList(1)">
             </div>
-            <button class="content__button">Ver todo conteúdo</button>
-    
+            <button class="content__button" routerLink='see-all'>Ver todo conteúdo</button>
         </div>
         <div class="content__header-bottom">
             <h2 class="content__header-title">Material didático</h2>
             <p class="content__header-description">Acesse suas últimas apresentações de aula.</p>
         </div>
-        <app-list-card [showAll]="false"></app-list-card>
+        <app-list-card [showAll]="false" (listReady)="onListReady($event)"></app-list-card>
     </div>
 </main>
+<router-outlet></router-outlet>

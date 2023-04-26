@@ -4,9 +4,10 @@
 }
 .content{
     margin-top: 32px;
+    margin-bottom: 32px;
     width: 100%;
     background-color: var(--color-neutral-white);
-    padding: 56px 72px;
+    padding: 56px 0 56px 72px ;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -15,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 72px ;
 }
 .content__header-top{
     display: flex;

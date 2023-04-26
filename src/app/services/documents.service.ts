@@ -16,7 +16,7 @@ export class RetrieveProjectsService {
     let params: { [param: string]: string } = {};
 
     if (!showAll) {
-      params = { total_per_page: '10', order_by: 'title', order_orientation: 'desc' };
+      params = { total_per_page: '10', order_orientation: 'desc' };
     }
     const result = this.http.get(this.apiUrl, { headers, params });
     return result

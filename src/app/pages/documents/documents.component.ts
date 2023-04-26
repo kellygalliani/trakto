@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-documents',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./documents.component.css']
 })
 export class DocumentsComponent {
+  list!: ElementRef;
 
+  onListReady(list: ElementRef) {
+    this.list = list;
+  }
+
+  scrollList(direction: number) {
+    this.list.nativeElement.scrollBy({ left: direction * 300, behavior: 'smooth' });
+  }
 }
