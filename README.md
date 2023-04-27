@@ -1,27 +1,56 @@
 # TraktoApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+<h2>Tabela de Conteúdos</h2>
 
-## Development server
+1. [ Sobre ](#sobre)
+2. [ Tecnologias](#techs)
+3. [ Instalação ](#install)
+4. [ Desenvolvedores ](#devs)
+5. [ termos de uso ](#termos)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<a name="sobre"></a>
 
-## Code scaffolding
+## 1. Sobre
+Este projeto foi gerado com Angular CLI versão 15.2.6.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Projeto desenvolvido para o teste técnico da empresa Trakto. 
 
-## Build
+<a name="links"></a>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<a name="techs"></a>
 
-## Running unit tests
+## 2. Tecnologias
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- <a name="html" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a>
+- <a name="css" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>
+- <a name="angular" href="https://angular.io/docs" target="_blank">Angular</a>
+- <a name="Angular Material" href="https://material.angular.io/" target="_blank">Angular Material</a>
 
-## Running end-to-end tests
+<a name="documentacao"></a>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 3. Instalação e uso
 
-## Further help
+### 3.1 Pré-Requisitos:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Antes de começar, certifique-se de ter instalado o Node.js e o Angular CLI em sua máquina.
+
+### 3.2 Instalação:
+
+1- Clone este repositório em sua máquina local usando git clone ``git@github.com:kellygalliani/trakto.git``.
+
+2- Navegue até o diretório do projeto e execute npm install para instalar todas as dependências necessárias.
+
+### 3.3 Servidor de desenvolvimento:
+
+Execute ``ng serve --open`` para iniciar um servidor de desenvolvimento e abrir automaticamente a aplicação em seu navegador padrão. A aplicação será recarregada automaticamente se você alterar qualquer um dos arquivos fonte.
+
+## 4. Deselvolvedora
+
+- <a name="kelly" href="" target="_blank">Kelly Cristina</a>
+
+<a name="termos"></a>
+
+## 5. Termos de uso
+
+Este é um projeto Open Source para fins educacionais e não comerciais, **Tipo de licença** - <a name="mit" href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>
+<a name="devs"></a>
