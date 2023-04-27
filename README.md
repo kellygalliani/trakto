@@ -26,8 +26,7 @@ Projeto desenvolvido para o teste técnico da empresa Trakto.
 - <a name="angular" href="https://angular.io/docs" target="_blank">Angular</a>
 - <a name="Angular Material" href="https://material.angular.io/" target="_blank">Angular Material</a>
 
-<a name="documentacao"></a>
-
+<a name="install"></a>
 ## 3. Instalação e uso
 
 ### 3.1 Pré-Requisitos:
@@ -44,7 +43,6 @@ Antes de começar, certifique-se de ter instalado o Node.js e o Angular CLI em s
 
 Execute ``ng serve --open`` para iniciar um servidor de desenvolvimento e abrir automaticamente a aplicação em seu navegador padrão. A aplicação será recarregada automaticamente se você alterar qualquer um dos arquivos fonte.
 
-<a name="install"></a>
 ## 4. Deselvolvedora
 
 - <a name="kelly" href="" target="_blank">Kelly Cristina</a>
