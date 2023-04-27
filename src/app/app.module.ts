@@ -12,9 +12,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { DocumentsComponent } from './pages/documents/documents.component';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 
-import { httpInterceptorProvides } from './http-interceptors';
 import { ListCardComponent } from './components/list-card/list-card.component';
 import { SeeAllProjectsComponent } from './pages/documents/see-all-projects/see-all-projects.component';
+import { WhiteboardComponent } from './pages/whiteboard/whiteboard.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import { SeeAllProjectsComponent } from './pages/documents/see-all-projects/see-
     DocumentsComponent,
     NavMenuComponent,
     ListCardComponent,
-    SeeAllProjectsComponent
+    SeeAllProjectsComponent,
+    WhiteboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +36,6 @@ import { SeeAllProjectsComponent } from './pages/documents/see-all-projects/see-
     ReactiveFormsModule
   ],
   providers: [
-    httpInterceptorProvides
   ],
   bootstrap: [AppComponent]
 })

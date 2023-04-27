@@ -23,7 +23,7 @@ export class NavMenuComponent {
     if(this.loginService.getUser()){
       user = this.loginService.getUser()!
     }else{
-      user = "../../../assets/user-avatar.svg"
+      user = "../../../assets/user-avatar.jpg"
     }
 
     return user

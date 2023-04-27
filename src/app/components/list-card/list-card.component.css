@@ -28,6 +28,7 @@
 }
 .content__list-item{
     width: auto;
+    height: 100%;
     max-width: 250px;
     display: inline-block;
     text-align: center;
@@ -42,6 +43,14 @@
     font-weight: 600;
     font-size: 18px;
     color: var(--color-neutral-dark);
+}
+.content__list-divImg{
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 .content__list-image{
     max-width: 250px;

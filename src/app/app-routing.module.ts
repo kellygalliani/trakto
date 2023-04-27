@@ -5,6 +5,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { DocumentsComponent } from './pages/documents/documents.component';
 import { AuthGuard } from './auth.guard';
 import { SeeAllProjectsComponent } from './pages/documents/see-all-projects/see-all-projects.component';
+import { WhiteboardComponent } from './pages/whiteboard/whiteboard.component';
+
 
 const routes: Routes = [
   {
@@ -12,7 +14,8 @@ const routes: Routes = [
     children:[
         { path: '', component: HomeComponent },
         { path: 'documents', component: DocumentsComponent },
-        { path: 'documents/see-all', component: SeeAllProjectsComponent }
+        { path: 'documents/see-all', component: SeeAllProjectsComponent },
+        { path: 'whiteboard', component: WhiteboardComponent }
     ],
     canActivate: [AuthGuard]
 },
