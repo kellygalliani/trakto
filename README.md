@@ -15,6 +15,10 @@ Este projeto foi gerado com Angular CLI versão 15.2.6.
 
 Projeto desenvolvido para o teste técnico da empresa Trakto. 
 
+### 1.1 Deploy da Aplicação
+
+- <a name="traktoApp" href="https://trakto.vercel.app" target="_blank">Trakto App - Live</a>
+
 <a name="links"></a>
 
 <a name="techs"></a>
