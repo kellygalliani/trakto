@@ -26,8 +26,7 @@ Projeto desenvolvido para o teste técnico da empresa Trakto.
 - <a name="angular" href="https://angular.io/docs" target="_blank">Angular</a>
 - <a name="Angular Material" href="https://material.angular.io/" target="_blank">Angular Material</a>
 
-<a name="documentacao"></a>
-
+<a name="install"></a>
 ## 3. Instalação e uso
 
 ### 3.1 Pré-Requisitos:
